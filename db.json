@@ -1,0 +1,6 @@
+{
+ "spaceX" : [{
+  "capsules":"upperPart",
+  "rockets":"booster"
+ }]
+}

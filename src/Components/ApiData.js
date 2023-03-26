@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
+import axios from 'axios';
 import { ADD_DATA } from '../actions';
 import Datagrid from './Datagrid';
 import Loader from './Loader';
@@ -16,9 +17,8 @@ function ApiData(props) {
         return "https://api.spacexdata.com/v4/capsules";
     }
     const getApiData = useCallback(async ()=>{
-        const res = await fetch(getUrl());
-        const response = await res.json();
-        return response;
+        const res = await axios.get(getUrl());
+        return res.data;
     }, []);
   
     useEffect(()=>{ 
