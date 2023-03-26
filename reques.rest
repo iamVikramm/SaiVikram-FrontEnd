@@ -1,0 +1,14 @@
+
+GET http://localhost:6080/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Nzk4NDI4MDF9.P9lSQTGuGvNRXR1ksTBlTyn1En6MwjfO46CHtyLDZvY
+
+
+###
+
+
+POST http://localhost:6080/login
+ 
+Content-Type: application/json
+{
+    "username":"vik"
+}
