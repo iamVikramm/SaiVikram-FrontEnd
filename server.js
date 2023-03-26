@@ -40,7 +40,7 @@ function authenticateToken(req, res, next) {
         return res.sendStatus(401)
     }
     else{
-        jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, user) => {
+        jwt.verify(token, process.env.ACCESS_TOKEN_SECRET,(err, user) => {
             //If the token is invalid
             if (err) return res.sendStatus(403)
             //if Token is valid

@@ -1,6 +1,6 @@
 
 GET http://localhost:6080/posts
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Nzk4NDI4MDF9.P9lSQTGuGvNRXR1ksTBlTyn1En6MwjfO46CHtyLDZvY
+Authorization: Bearer .eyJpYXQiOjE2Nzk4NDQzOTJ9.FQCPYOqnhSQpPDYWeyDbDDcL2bYdpyJ7TRTghGMJbK4
 
 
 ###
@@ -9,6 +9,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Nzk4NDI4M
 POST http://localhost:6080/login
  
 Content-Type: application/json
+
+
 {
     "username":"vik"
 }
