@@ -1,0 +1,454 @@
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  background-color: #000;
+  font-family: 'Poppins', sans-serif;
+}
+
+/****************** Loader ****************/
+
+#Loader{
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader-inner{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  border: 5px solid white;
+  border-radius: 50%;
+  border-right: 5px solid #FE6244;
+  animation: rotate 1s ease-in-out infinite alternate;
+
+}
+
+
+
+/***************** Navbar ********************/
+
+nav{
+  height: 8vh;
+  margin: 0;
+  padding: .7rem;
+  margin: 0;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  position: sticky;
+  top: 0px;
+
+}
+.nav{
+  transition-property: all; 
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 800ms;
+}
+
+.logo-img{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("https://www.spacex.com/static/images/share.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 20%;
+
+}
+.nav-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 17%;
+}
+.nav-links h4{
+  margin: 0 2rem;
+}
+
+/**************** Header ***********/
+
+header{
+  height: 92vh;
+  background-image: url("https://www.spacex.com/static/images/dragon/desktop/DragonTrunk_Render_Desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  word-spacing: .2rem;
+  padding: 0 1rem 0 7rem;
+  z-index: 100;
+}
+.header-div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+.header-div h1{
+  font-size: 6.5rem;
+  margin: 0;
+  padding: 0;
+}
+.header-div p{
+  font-size: 1.2rem;
+}
+/********************** Engines **************/
+
+#draco-engines{
+  margin: 5%;
+  height: 90vh;
+  background-image: url("https://www.spacex.com/static/images/dragon/desktop/Draco.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 2% 2%;
+}
+#super-drago-engines{
+  margin: 5%;
+  height: 90vh;
+  background-image: url("https://www.spacex.com/static/images/dragon/desktop/SuperDraco.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 2% 2%;
+}
+.engines-div{
+  height: 30%;
+  width: 35%;
+  padding: 0;
+  margin: 3%;
+  margin-top: 5%;
+  letter-spacing: .08rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 0;
+}
+.engines-div p{
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin: 0;
+}
+.engines-div h2{
+  margin: 0;
+  font-size: 3rem;
+}
+.engines-heading{
+  margin-left: 2.5%;
+}
+.engine-names{
+  margin: 0;
+  margin-top: 15%;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 65%;
+  font-weight: 800;
+}
+
+.engines-content{
+  width: 30%;
+  margin-left: 4%;
+  margin-top: 5%;
+}
+.engines-content p{
+  width: 100%;
+  text-align: left;
+  word-spacing: .03rem;
+  font-size: .88rem;
+  line-break: auto;
+  font-weight: 200;
+  line-height: 1.5;
+}
+.engines-ratings{
+  margin-top: 3%;
+  width: 30%;
+  margin-left: 4%;
+}
+.engines-ratings-child{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgrey;
+}
+
+.engines-ratings-child p{
+  font-size: .95rem;
+  font-weight: 600;
+  margin-bottom: 2%;
+
+}
+
+/****************** Capsule Background Section ***************/
+#capsule-entry{
+  height: 90vh;
+  background-image: url("https://www.spacex.com/static/images/dragon/refresh/DRAGON_DM2_LC39A_3840x2560.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-center-name{
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.bg-bottom-detail{
+  color: #fff;
+  text-align: center;
+}
+
+#capsule-entry h2 span{
+  font-size: 5rem;
+}
+
+/************************ Search *********************/
+
+#search{
+  margin: 5%;
+  text-align:center ;
+  color: #fff;
+}
+#search h2{
+  color: #fff;
+}
+.options-outer-div{
+  margin: 3%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.options-div{
+  width: 50%;
+}
+.options-div label{
+  font-size: 1.1rem;
+}
+.options-div select{
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 1%;
+}
+.search-outer-div{
+  margin: 5% 3%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-div{
+  padding: 1% 2%;
+  height: 1.5rem;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  background-color: #fff;
+}
+
+.search-div input{
+  margin: 2%;
+  outline: none;
+  border: none;
+  height: 100%;
+  width: 100%;
+  font-size: 1.2rem;
+}
+.search-div span{
+  cursor: pointer;
+  font-size: 1.15rem;
+}
+.searched-items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+.each-search-item{
+  border: 1px solid gray;
+  margin: 2%;
+  padding: 1%;
+}
+/********************* fatched Data *****************/
+.fetchedData{
+  margin: 5% 0;
+  background-color: red;
+}
+
+/******************** Data-Grid **************/
+
+.Data-Grid{
+  height: 40rem;
+  width: 84%;
+  margin: 10%;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+.Data-Grid h2{
+  margin: 5% 0;
+}
+
+/************************* PopUp *********************/
+.popup{
+  position: fixed;
+  height:100vh;
+  width: 100%;
+  top:0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.popup-inner{
+  position: relative;
+  padding: 1rem;
+  width: 100%;
+  max-width: 50%;
+  background-image: url("https://images.jifo.co/2609678_1673301850043.jpg");
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #00AAA9;
+  text-align: left;
+  border-radius: 20px;
+  word-spacing: .2rem;
+  line-height: 2rem;
+}
+.popup-inner h2{
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.popup-inner p span{
+  text-decoration: underline;
+  color: #fff;
+  text-underline-offset: 8px;
+  font-weight: 700;
+}
+
+.popup-inner button{
+  background-color: #F96666;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  top:16px;
+  right: 16px;
+}
+
+/*********************** Footer ********************/
+footer{
+  height: 4vh;
+  margin: 1% 0 0 0;
+  padding: 2%;
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer{
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: .75rem;
+  font-weight: 700;
+}
+.footer span{
+  color:#8f8f8f
+}
+/********************** Loader Animation ****************/
+
+@keyframes rotate {
+  from{
+    transform:rotate(0deg) ;
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+/******************** Media Queries ***************** */
+@media(max-width:1024px){
+  html{
+    font-size: 80%;
+  }
+}
+@media(max-width:920px){
+  html{
+    font-size: 70%;
+  }
+  header{
+    background-position: center;
+  }
+  .header-div{
+    justify-content: center;
+    align-items: center;
+  }
+  .popup-inner{
+    background-position: center;
+  }
+  #draco-engines{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media(max-width:768px){
+  html{
+    font-size: 60%;
+  }
+}
+
+@media(max-width:600px){
+  html{
+    font-size: 50%;
+  }
+
+}
+
+@media(max-width:480px){
+  html{
+    font-size: 40%;
+  }
+}
+
+/********************* ScrollBar ******************/
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+::-webkit-scrollbar {
+  width: 4px;
+  height: 3px;
+}
